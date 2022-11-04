@@ -1,6 +1,5 @@
 # *************************************************************************************************
-# Copyright (c) 2021 Calypso Networks Association                                                 *
-# https://www.calypsonet-asso.org/                                                                *
+# Copyright (c) 2021 Calypso Networks Association http://calypsonet.org/                          *
 #                                                                                                 *
 # See the NOTICE file(s) distributed with this work for additional information regarding          *
 # copyright ownership.                                                                            *
@@ -11,6 +10,24 @@
 # SPDX-License-Identifier: EPL-2.0                                                                *
 # *************************************************************************************************/
 
-# Add projects
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/main)
-#add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/test)
+SET(LIBRARY_NAME keypleplugincppapilib)
+
+# declare this library as header only
+ADD_LIBRARY(
+    ${LIBRARY_NAME}
+    INTERFACE
+)
+
+TARGET_INCLUDE_DIRECTORIES(
+    ${LIBRARY_NAME}
+    INTERFACE
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/spi
+    ${CMAKE_CURRENT_SOURCE_DIR}/spi/reader
+    ${CMAKE_CURRENT_SOURCE_DIR}/spi/reader/observable
+    ${CMAKE_CURRENT_SOURCE_DIR}/spi/reader/observable/state/insertion
+    ${CMAKE_CURRENT_SOURCE_DIR}/spi/reader/observable/state/processing
+    ${CMAKE_CURRENT_SOURCE_DIR}/spi/reader/observable/state/removal
+)
+
+ADD_LIBRARY(Keyple::PluginApi ALIAS ${LIBRARY_NAME})
