@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['_7eautonomousobservablepluginapi_0',['~AutonomousObservablePluginApi',['../classkeyple_1_1core_1_1plugin_1_1_autonomous_observable_plugin_api.html#a8e1518bcbcbd43c4e1f758bc01993881',1,'keyple::core::plugin::AutonomousObservablePluginApi']]],
+  ['_7eautonomousobservablepluginspi_1',['~AutonomousObservablePluginSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1_autonomous_observable_plugin_spi.html#aa0fdf33c7fc8ce426bdc3589ca288e3e',1,'keyple::core::plugin::spi::AutonomousObservablePluginSpi']]],
+  ['_7eautonomousselectionreaderspi_2',['~AutonomousSelectionReaderSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1reader_1_1_autonomous_selection_reader_spi.html#ad4dcf71abdaf3947a45819c754b9cc39',1,'keyple::core::plugin::spi::reader::AutonomousSelectionReaderSpi']]],
+  ['_7econfigurablereaderspi_3',['~ConfigurableReaderSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1reader_1_1_configurable_reader_spi.html#a3f517a1deb8887a1f22600999c635ba2',1,'keyple::core::plugin::spi::reader::ConfigurableReaderSpi']]],
+  ['_7eobservablepluginspi_4',['~ObservablePluginSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1_observable_plugin_spi.html#ad55d454b40639d9101103711650ceaba',1,'keyple::core::plugin::spi::ObservablePluginSpi']]],
+  ['_7epluginfactoryspi_5',['~PluginFactorySpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1_plugin_factory_spi.html#a6780dae33d6be20a1f2da404a9c51d6f',1,'keyple::core::plugin::spi::PluginFactorySpi']]],
+  ['_7epluginspi_6',['~PluginSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1_plugin_spi.html#a0e78ca2ef33525f584a28cb9142ab849',1,'keyple::core::plugin::spi::PluginSpi']]],
+  ['_7epoolpluginfactoryspi_7',['~PoolPluginFactorySpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1_pool_plugin_factory_spi.html#aa434b9ea475c8314fa60f185cda49685',1,'keyple::core::plugin::spi::PoolPluginFactorySpi']]],
+  ['_7epoolpluginspi_8',['~PoolPluginSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1_pool_plugin_spi.html#adf5098322f069b38d47438da2a969eb5',1,'keyple::core::plugin::spi::PoolPluginSpi']]],
+  ['_7ereaderspi_9',['~ReaderSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1reader_1_1_reader_spi.html#abe0c765db6f385ce45d4f8836edfcb57',1,'keyple::core::plugin::spi::reader::ReaderSpi']]],
+  ['_7ewaitforcardinsertionautonomousreaderapi_10',['~WaitForCardInsertionAutonomousReaderApi',['../classkeyple_1_1core_1_1plugin_1_1_wait_for_card_insertion_autonomous_reader_api.html#aa75f0f80b63c17a810eb02a022b90264',1,'keyple::core::plugin::WaitForCardInsertionAutonomousReaderApi']]],
+  ['_7ewaitforcardremovalautonomousreaderapi_11',['~WaitForCardRemovalAutonomousReaderApi',['../classkeyple_1_1core_1_1plugin_1_1_wait_for_card_removal_autonomous_reader_api.html#ace9cc10b83c26628ae0f802281a41599',1,'keyple::core::plugin::WaitForCardRemovalAutonomousReaderApi']]],
+  ['_7ewaitforcardremovalduringprocessingblockingspi_12',['~WaitForCardRemovalDuringProcessingBlockingSpi',['../classkeyple_1_1core_1_1plugin_1_1spi_1_1reader_1_1observable_1_1state_1_1processing_1_1_wait_fore2f1695416a8f137dc62a5fb0dd10607.html#ad4f8c9a108dcd9837fdce233f18edbc8',1,'keyple::core::plugin::spi::reader::observable::state::processing::WaitForCardRemovalDuringProcessingBlockingSpi']]]
+];
