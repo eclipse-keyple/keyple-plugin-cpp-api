@@ -1,33 +1,38 @@
-# *************************************************************************************************
-# Copyright (c) 2021 Calypso Networks Association                                                 *
-# https://www.calypsonet-asso.org/                                                                *
-#                                                                                                 *
-# See the NOTICE file(s) distributed with this work for additional information regarding          *
-# copyright ownership.                                                                            *
-#                                                                                                 *
-# This program and the accompanying materials are made available under the terms of the Eclipse   *
-# Public License 2.0 which is available at http://www.eclipse.org/legal/epl-2.0                   *
-#                                                                                                 *
-# SPDX-License-Identifier: EPL-2.0                                                                *
-# *************************************************************************************************/
+# *****************************************************************************
+# Copyright (c) 2025 Calypso Networks Association https://calypsonet.org/     *
+#                                                                             *
+# This program and the accompanying materials are made available under the    *
+# terms of the MIT License which is available at                              *
+# https://opensource.org/licenses/MIT.                                        *
+#                                                                             *
+# SPDX-License-Identifier: MIT                                                *
+# *****************************************************************************/
 
 SET(EXECTUABLE_NAME keypleplugincppapi_ut)
 
 INCLUDE_DIRECTORIES(
+
     ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}/../main
-    ${CMAKE_CURRENT_SOURCE_DIR}/../main/spi
 )
 
 ADD_EXECUTABLE(
+
     ${EXECTUABLE_NAME}
 
     ${CMAKE_CURRENT_SOURCE_DIR}/MainTest.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/PluginApiPropertiesTest.cpp
 )
 
-# Add Google Test
-SET(GOOGLETEST_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+# Add necessary deps
 INCLUDE(CMakeLists.txt.googletest)
 
-TARGET_LINK_LIBRARIES(${EXECTUABLE_NAME} gtest gmock Keyple::Util)
+TARGET_LINK_LIBRARIES(
+
+    ${EXECTUABLE_NAME}
+
+    PRIVATE
+
+    gtest
+    gmock
+    Keyple::Plugin
+)
