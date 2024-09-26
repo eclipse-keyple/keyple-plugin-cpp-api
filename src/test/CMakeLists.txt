@@ -1,22 +1,17 @@
 # *************************************************************************************************
-# Copyright (c) 2021 Calypso Networks Association                                                 *
-# https://www.calypsonet-asso.org/                                                                *
+# Copyright (c) 2024 Calypso Networks Association https://calypsonet.org/                         *
 #                                                                                                 *
-# See the NOTICE file(s) distributed with this work for additional information regarding          *
-# copyright ownership.                                                                            *
+# This program and the accompanying materials are made available under the                        *
+# terms of the MIT License which is available at https://opensource.org/licenses/MIT.             *
 #                                                                                                 *
-# This program and the accompanying materials are made available under the terms of the Eclipse   *
-# Public License 2.0 which is available at http://www.eclipse.org/legal/epl-2.0                   *
-#                                                                                                 *
-# SPDX-License-Identifier: EPL-2.0                                                                *
+# SPDX-License-Identifier: MIT                                                                    *
 # *************************************************************************************************/
 
 SET(EXECTUABLE_NAME keypleplugincppapi_ut)
 
 INCLUDE_DIRECTORIES(
     ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}/../main
-    ${CMAKE_CURRENT_SOURCE_DIR}/../main/spi
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../include
 )
 
 ADD_EXECUTABLE(
@@ -26,8 +21,8 @@ ADD_EXECUTABLE(
     ${CMAKE_CURRENT_SOURCE_DIR}/PluginApiPropertiesTest.cpp
 )
 
-# Add Google Test
-SET(GOOGLETEST_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+# Add necessary deps
 INCLUDE(CMakeLists.txt.googletest)
+INCLUDE(CMakeLists.txt.keyple-util)
 
 TARGET_LINK_LIBRARIES(${EXECTUABLE_NAME} gtest gmock Keyple::Util)
