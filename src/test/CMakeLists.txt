@@ -23,6 +23,5 @@ ADD_EXECUTABLE(
 
 # Add necessary deps
 INCLUDE(CMakeLists.txt.googletest)
-INCLUDE(CMakeLists.txt.keyple-util)
 
-TARGET_LINK_LIBRARIES(${EXECTUABLE_NAME} gtest gmock Keyple::Util)
+TARGET_LINK_LIBRARIES(${EXECTUABLE_NAME} gtest gmock)
