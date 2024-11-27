@@ -9,20 +9,18 @@
 
 SET(LIBRARY_NAME keypleplugin)
 
-# Declare this library as header only.
 ADD_LIBRARY(
     ${LIBRARY_NAME}
     INTERFACE
 )
 
-# Include Keypop Reader CMakeLists details
-INCLUDE("CMakeLists.txt.keyple-util")
+ADD_LIBRARY(
+    Keyple::Plugin
+    ALIAS
+    ${LIBRARY_NAME})
 
 TARGET_INCLUDE_DIRECTORIES(
     ${LIBRARY_NAME}
     INTERFACE
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}/keyple/core/util
+    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
 )
-
-ADD_LIBRARY(Keyple::Plugin ALIAS ${LIBRARY_NAME})

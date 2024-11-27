@@ -7,8 +7,9 @@
 # SPDX-License-Identifier: MIT                                                                    *
 # *************************************************************************************************/
 
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+
 PROJECT(KeyplePluginCppApi C CXX)
-CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 
 SET(CMAKE_PROJECT_VERSION_MAJOR "2")
 SET(CMAKE_PROJECT_VERSION_MINOR "3")
