@@ -21,15 +21,7 @@ ADD_LIBRARY(
 
 TARGET_INCLUDE_DIRECTORIES(
     ${LIBRARY_NAME}
-    PUBLIC
-    ${CMAKE_CURRENT_LIST_DIR}/keyple
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin/spi
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin/spi/reader
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin/spi/reader/observable
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin/spi/reader/observable/state
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin/spi/reader/observable/state/insertion
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin/spi/reader/observable/state/processing
-    ${CMAKE_CURRENT_LIST_DIR}/keyple/core/plugin/spi/reader/observable/state/removal
+    INTEEFACE
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}>
+    $<INSTALL_INTERFACE:${CMAKE_CURRENT_LIST_DIR}>
 )
