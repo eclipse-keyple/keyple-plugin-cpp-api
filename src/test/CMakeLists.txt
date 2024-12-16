@@ -11,7 +11,6 @@ SET(EXECTUABLE_NAME keypleplugincppapi_ut)
 
 INCLUDE_DIRECTORIES(
     ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../include
 )
 
 ADD_EXECUTABLE(
@@ -24,4 +23,11 @@ ADD_EXECUTABLE(
 # Add necessary deps
 INCLUDE(CMakeLists.txt.googletest)
 
-TARGET_LINK_LIBRARIES(${EXECTUABLE_NAME} gtest gmock)
+TARGET_LINK_LIBRARIES(
+    ${EXECTUABLE_NAME}
+
+    PRIVATE
+
+    gtest
+    gmock
+    Keyple::Plugin)
