@@ -33,4 +33,5 @@ TARGET_LINK_LIBRARIES(
 
     gtest
     gmock
-    Keyple::Plugin)
+    Keyple::Plugin
+)
