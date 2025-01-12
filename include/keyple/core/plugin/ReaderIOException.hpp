@@ -12,7 +12,7 @@
 #include <memory>
 #include <string>
 
-#include "keyple/util/cpp/exception/Exception.hpp"
+#include "keyple/core/util/cpp/exception/Exception.hpp"
 
 namespace keyple {
 namespace core {

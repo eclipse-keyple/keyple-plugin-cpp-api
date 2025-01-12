@@ -12,13 +12,13 @@
 #include <memory>
 #include <string>
 
-#include "keyple/util/cpp/exception/Exception.hpp"
+#include "keyple/core/util/cpp/exception/Exception.hpp"
 
 namespace keyple {
 namespace core {
 namespace plugin {
 
-using keyple::util::cpp::exception::Exception;
+using keyple::core::util::cpp::exception::Exception;
 
 /**
  * Indicates that an error occurred while communicating with a card.

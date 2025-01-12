@@ -9,6 +9,9 @@
 
 SET(LIBRARY_NAME keypleplugin)
 
+# Include deps
+INCLUDE("CMakeLists.txt.keyple-util")
+
 ADD_LIBRARY(
 
     ${LIBRARY_NAME}
@@ -22,7 +25,8 @@ ADD_LIBRARY(
 
     ALIAS
 
-    ${LIBRARY_NAME})
+    ${LIBRARY_NAME}
+)
 
 TARGET_INCLUDE_DIRECTORIES(
 
@@ -32,4 +36,13 @@ TARGET_INCLUDE_DIRECTORIES(
 
     $<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}>
     $<INSTALL_INTERFACE:${CMAKE_CURRENT_LIST_DIR}>
+)
+
+TARGET_LINK_LIBRARIES(
+
+    ${LIBRARY_NAME}
+
+    INTERFACE
+
+    Keyple::Util
 )
