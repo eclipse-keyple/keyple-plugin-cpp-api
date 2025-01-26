@@ -11,13 +11,13 @@
 
 #include <string>
 
-#include "keyple/util/cpp/exception/Exception.hpp"
+#include "keyple/core/util/cpp/exception/Exception.hpp"
 
 namespace keyple {
 namespace core {
 namespace plugin {
 
-using keyple::util::cpp::exception::Exception;
+using keyple::core::util::cpp::exception::Exception;
 
 /**
  * Indicates that a task (for example, waiting for a card to be inserted) has been cancelled and is
