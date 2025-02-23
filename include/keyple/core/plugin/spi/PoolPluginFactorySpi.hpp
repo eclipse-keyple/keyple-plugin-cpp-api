@@ -12,7 +12,6 @@
 #include <memory>
 #include <string>
 
-/* Plugin */
 #include "keyple/core/plugin/spi/PluginSpi.hpp"
 #include "keyple/core/plugin/spi/PoolPluginSpi.hpp"
 

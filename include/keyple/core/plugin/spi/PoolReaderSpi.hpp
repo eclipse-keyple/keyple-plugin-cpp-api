@@ -12,7 +12,7 @@
 #include <memory>
 
 #include "keyple/core/plugin/spi/reader/ReaderSpi.hpp"
-#include "keyple/core/util/cpp/Any.hpp"
+#include "keypop/reader/cpp/Any.hpp"
 
 namespace keyple {
 namespace core {
@@ -20,7 +20,7 @@ namespace plugin {
 namespace spi {
 
 using keyple::core::plugin::spi::reader::ReaderSpi;
-using keyple::core::util::cpp::any;
+using keypop::reader::cpp::any;
 
 /**
  * Reader extension for pool readers.

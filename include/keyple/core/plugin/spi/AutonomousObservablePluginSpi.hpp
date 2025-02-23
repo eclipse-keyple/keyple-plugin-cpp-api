@@ -13,7 +13,6 @@
 #include <memory>
 #include <string>
 
-/* Plugin */
 #include "keyple/core/plugin/AutonomousObservablePluginApi.hpp"
 #include "keyple/core/plugin/spi/PluginSpi.hpp"
 
