@@ -40,7 +40,7 @@ public:
      * @return Null if no smart card is selected by default, the selected smart card otherwise.
      * @since 2.1.0
      */
-    virtual std::shared_ptr<any> getSelectedSmartCard();
+    virtual std::shared_ptr<any> getSelectedSmartCard() = 0;
 };
 
 } /* namespace spi */
