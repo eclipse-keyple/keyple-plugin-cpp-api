@@ -42,7 +42,7 @@ namespace observable {
  *
  * @since 2.0.0
  */
-class ObservableReaderSpi : public virtual ReaderSpi {
+class ObservableReaderSpi : virtual public ReaderSpi {
 public:
     /**
      * Invoked when the card observation process is started

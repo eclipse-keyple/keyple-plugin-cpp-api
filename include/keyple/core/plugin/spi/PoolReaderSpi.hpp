@@ -27,7 +27,7 @@ using keypop::reader::cpp::any;
  *
  * @since 2.1.0
  */
-class PoolReaderSpi : public ReaderSpi {
+class PoolReaderSpi : virtual public ReaderSpi {
 public:
     /**
      * Virtual destructor.
