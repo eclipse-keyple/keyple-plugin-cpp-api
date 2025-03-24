@@ -12,7 +12,7 @@ The full documentation, including download information is available in the **Doc
 
 ## Doxygen
 
-The doxygen is available online: [eclipse.github.io/keyple-plugin-cpp-api/](https://eclipse.github.io/keyple-plugin-cpp-api/)
+The doxygen is available online: [docs.keyple.org/keyple-plugin-cpp-api/](https://docs.keyple.org/keyple-plugin-cpp-api/)
 
 ## Build the Code
 
