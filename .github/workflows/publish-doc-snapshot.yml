@@ -28,7 +28,7 @@ jobs:
         run: ./.github/scripts/patch_doxyfile.sh ${{ env.PROJECT_VERSION }}
 
       - name: Generate and prepare documentation
-        uses: eclipse-keypop/keypop-actions/doxygen@f012732e75cdda39ba7b988533030493303700a5
+        uses: eclipse-keyple/keyple-actions/doxygen@0c8593c4ed6b393642a1732af1fdef84d5e59540
         with:
           repo-name: ${{ github.event.repository.name }}
           version: ${{ github.event.inputs.version || github.ref_name }}
