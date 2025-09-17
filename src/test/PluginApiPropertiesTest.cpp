@@ -1,31 +1,24 @@
-/**************************************************************************************************
- * Copyright (c) 2021 Calypso Networks Association                                                *
- * https://www.calypsonet-asso.org/                                                               *
- *                                                                                                *
- * See the NOTICE file(s) distributed with this work for additional information regarding         *
- * copyright ownership.                                                                           *
- *                                                                                                *
- * This program and the accompanying materials are made available under the terms of the Eclipse  *
- * Public License 2.0 which is available at http://www.eclipse.org/legal/epl-2.0                  *
- *                                                                                                *
- * SPDX-License-Identifier: EPL-2.0                                                               *
- **************************************************************************************************/
+/******************************************************************************
+ * Copyright (c) 2025 Calypso Networks Association https://calypsonet.org/    *
+ *                                                                            *
+ * This program and the accompanying materials are made available under the   *
+ * terms of the MIT License which is available at                             *
+ * https://opensource.org/licenses/MIT.                                       *
+ *                                                                            *
+ * SPDX-License-Identifier: MIT                                               *
+ ******************************************************************************/
 
 #include <regex>
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
-/* Keyple Plugin */
-#include "PluginApiProperties.h"
+#include "keyple/core/plugin/PluginApiProperties.hpp"
 
-using namespace testing;
+using keyple::core::plugin::PluginApiProperties_VERSION;
 
-using namespace keyple::core::plugin;
-
-TEST(PluginApiPropertiesTest, versionIsCorrectlyWritten)
-{
-    const std::string& apiVersion = PluginApiProperties::VERSION;
+TEST(PluginApiPropertiesTest, versionIsCorrectlyWritten) {
+    const std::string& apiVersion = PluginApiProperties_VERSION;
     const std::regex r("\\d+\\.\\d+");
 
     ASSERT_TRUE(std::regex_match(apiVersion, r));
