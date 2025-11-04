@@ -1,0 +1,22 @@
+/**
+ * @mainpage Keyple Plugin C++ API
+ *
+ * @section overview Overview
+ *
+ * The **Keyple Plugin C++ API** is dedicated to the development of specific
+ * Keyple plugins, providing the necessary interfaces and contracts for
+ * creating custom reader plugins.
+ *
+ * @section key_features Key Features
+ *
+ * - Plugin development interfaces
+ * - Reader plugin extension points
+ * - Standard plugin contracts and lifecycle
+ * - Integration with Keyple service layer
+ * - Custom reader implementation support
+ *
+ * @section resources Resources
+ *
+ * - **Documentation**: [keyple.org](https://keyple.org)
+ * - **API Documentation**: [docs.keyple.org/keyple-plugin-cpp-api](https://docs.keyple.org/keyple-plugin-cpp-api)
+ */
