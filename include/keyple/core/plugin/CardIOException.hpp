@@ -10,7 +10,6 @@
 
 #pragma once
 
-#include <memory>
 #include <string>
 
 #include "keyple/core/util/cpp/exception/Exception.hpp"
@@ -41,8 +40,7 @@ public:
      * @param cause the cause
      * @since 2.0.0
      */
-    CardIOException(
-        const std::string& message, const std::shared_ptr<Exception> cause)
+    CardIOException(const std::string& message, const Exception& cause)
     : Exception(message, cause) {
     }
 };
