@@ -10,8 +10,8 @@
 
 SET(LIBRARY_NAME keypleplugin)
 
-# Include deps
-INCLUDE("CMakeLists.txt.keyple-util")
+# Keyple Util is supplied by Conan (requires) via CMakeDeps
+FIND_PACKAGE(keyple-util-cpp-lib REQUIRED CONFIG)
 
 ADD_LIBRARY(
 
